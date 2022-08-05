@@ -1,2 +1,2 @@
 # JS-QUIZ-1
-- Javascript ToDo quiz codes.
+- Javascript Todo quiz codes.
