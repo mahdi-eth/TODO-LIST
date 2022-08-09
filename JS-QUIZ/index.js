@@ -36,7 +36,7 @@ userLocalstorage.forEach((toDo) => {
   let htmlUNList = document.createElement("ul");
   htmlUNList.className = "main-ul";
   htmlUNList.id = toDo.id;
-  if (toDo.checked) htmlUNList.style.background = "rgba(0, 162, 255, 0.850)";
+
 
   const htmlList = document.createElement("li");
 
@@ -55,6 +55,12 @@ userLocalstorage.forEach((toDo) => {
 
   htmlList.appendChild(htmlTitle);
   htmlList.appendChild(htmlLDesc);
+
+  if (toDo.checked) { 
+    htmlUNList.style.background = "rgba(0, 162, 255, 0.850)";
+    htmlTitleInput.style.textDecoration = "line-through";
+    htmlLDescInput.style.textDecoration = "line-through";
+  };
 
   const htmlDel = document.createElement("button");
   htmlDel.innerHTML = "Del";
@@ -113,12 +119,13 @@ userLocalstorage.forEach((toDo) => {
   htmlEDIT.innerText = "Edit";
   if (htmlTitleInput.disabled == true) {
     htmlEDIT.onclick = () => {
-      console.log("hi");
       htmlTitleInput.disabled = false;
       htmlTitleInput.select();
       htmlLDescInput.disabled = false;
       htmlLDescInput.className = "input";
       htmlTitleInput.className = "input";
+    htmlTitleInput.style.textDecoration = "none";
+    htmlLDescInput.style.textDecoration = "none";
       htmlEDIT.innerText = "Save";
       if (htmlTitleInput.disabled == false) {
         htmlEDIT.onclick = () => {
