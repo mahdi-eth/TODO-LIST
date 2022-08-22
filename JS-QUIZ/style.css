@@ -40,7 +40,7 @@ form textarea:focus-visible {
   padding: 1rem;
 }
 
-#Desc {
+#desc {
   padding: 2rem;
   resize: none;
   width: 30%;
@@ -51,6 +51,9 @@ form textarea:focus-visible {
   cursor: pointer;
   transition: 0.1s;
   width: 40%;
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 0 0.4rem 0.8rem #00000050;
 }
 
 #submit:hover {
@@ -63,10 +66,14 @@ h1 {
   margin-top: 4rem;
 }
 
-.main-ul {
+#main {
   width: 60%;
   margin: 0 auto;
+}
+
+li {
   background: #fff;
+  list-style: none;
   padding: 2rem;
   border-radius: 2rem;
   box-shadow: 0 0.4rem 0.8rem #00000050;
@@ -77,20 +84,35 @@ h1 {
   background: rgba(0, 162, 255, 0.577);
 }
 
-.main-ul li {
-    margin-left: 1rem;
-}
-
-.input {
-  outline: .1rem solid rgba(0, 162, 255, 0.34);
-  border-radius: 1rem;
+.title-input {
+  font-size: 2.8rem;
   border: none;
   padding: .8rem;
   width: 97%;
 }
 
-.input:focus-visible {
-  outline: .1rem solid rgba(0, 162, 255, 0.981);
+li .todo-desc {
+  font-size: 1.8rem;
+  padding: .2rem 1.6rem;
+  margin: 0;
+  border-radius: 1rem;
+}
+
+h3{
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+#main input:focus-visible {
+  outline:none;
+  border: none;
+  background: inherit;
+}
+
+#main input {
+  outline:none;
+  border: none;
+  background: transparent;
 }
 
 input:disabled {
@@ -99,8 +121,7 @@ input:disabled {
   color:inherit;
   border: none;
 }
-
-.main-ul button {
+li button {
   margin-left: 1rem;
   border-radius: 1rem;
   box-shadow: 0 0.4rem 0.8rem #00000050;
@@ -111,7 +132,7 @@ input:disabled {
   transition: all .1s;
 }
 
-.main-ul button:hover {
+li button:hover {
   background-color:yellowgreen;
 } 
 

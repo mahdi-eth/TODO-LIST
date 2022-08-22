@@ -5,25 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Todo</title>
   </head>
   <body>
+    <h1>TODO</h1>
     <div id="myAlert" class="my-alert">
       <span>Please fill both of the text areas</span>
       <button id="alertBtn" type="button">OK</button>
     </div>
-    <form action="#">
+    <form>
       <input id="title" type="text" placeholder="Title" />
-      <textarea
-        id="Desc"
-        placeholder="What do you want to do?"
-        cols="30"
-        rows="10"
-      ></textarea>
-      <input id="submit" type="submit" />
+      <textarea id="desc" placeholder="Paragraf" rows="8"></textarea>
+      <button id="submit">submit</button>
     </form>
-
     <h1>My ToDo List</h1>
+    <ul id="main"></ul>
+
     <script type="module" src="./index.js"></script>
   </body>
 </html>
