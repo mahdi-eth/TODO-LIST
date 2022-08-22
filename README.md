@@ -1,5 +1,5 @@
 # TODO List
 - Javascript Todo List codes.
-  - Coded for my frontend Bootcamp's first Javascript quiz
+  - Coded for my frontend Bootcamp's first Javascript quiz.
 
 **`Updated Recently`**
