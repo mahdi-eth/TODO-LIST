@@ -1,2 +1,5 @@
-# JS-QUIZ-1
-- Javascript Todo quiz codes.
+# TODO List
+- Javascript Todo List codes.
+  - Coded for my frontend Bootcamp's first Javascript quiz
+
+**`Updated Recently`**
